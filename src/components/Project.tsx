@@ -24,7 +24,7 @@ function Project() {
     <Container className={classes.experience}>
       <Typography variant="h3" className={classes.title}>Project</Typography>
       <Grid container spacing={4}>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={4}>
           <Card>
             <CardMedia
               component="img"
@@ -46,7 +46,7 @@ function Project() {
           </Card>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={4}>
           <Card>
             <CardMedia
               component="img"
@@ -68,7 +68,7 @@ function Project() {
           </Card>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={4}>
           <Card>
             <CardMedia
               component="img"
@@ -90,7 +90,7 @@ function Project() {
           </Card>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={4}>
           <Card>
             <CardMedia
               component="img"
@@ -112,7 +112,7 @@ function Project() {
           </Card>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={4}>
           <Card>
             <CardMedia
               component="img"
@@ -134,7 +134,7 @@ function Project() {
           </Card>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={4}>
           <Card>
             <CardMedia
               component="img"

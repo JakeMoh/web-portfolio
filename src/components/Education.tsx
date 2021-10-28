@@ -37,7 +37,7 @@ function Education() {
             University of Toronto
           </Typography>
           <Typography>
-            BSc Animal Physiology & Human Physiology
+            BSc Animal Physiology & Human Biology
             (2012 - 2017)
           </Typography>
         </Grid>
