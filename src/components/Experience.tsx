@@ -1,12 +1,26 @@
-import { Typography, Avatar, Container, Grid } from '@mui/material';
+import { Typography, Avatar, Container, Grid, Link} from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
   experience: {
-    paddingTop: 500
+    marginTop: "20vh",
+    width: "100%"
+  },
+  card: {
+    marginTop: "5vh",
+    paddingTop: "10vh",
+    paddingBottom: "10vh",
+    background: "#21242B"
+  },
+  center: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: "5vh",
+    paddingBottom: "5vh"
   },
   title: {
-    paddingBottom: 100
+    paddingBottom: "5vh"
   }
 })
 
@@ -16,24 +30,43 @@ function Experience() {
   return (
     <Container className={classes.experience}>
       <Typography variant="h3" className={classes.title}>Experience</Typography>
-      <Grid container alignItems="center" justifyContent="center" direction="column" spacing={4}>
-        <Grid item>
-          <Avatar alt="AWS" src={`${process.env.PUBLIC_URL}/aws.jpg`} sx={{ width: 80, height: 80 }}/>
+      <Grid container className={classes.card}>
+        <Grid item sm={6} xs={12} className={classes.center}>
+          <Avatar alt="awd" src={`${process.env.PUBLIC_URL}/aws.jpg`} sx={{ width: "40vh", height: "40vh"}}/>
         </Grid>
-        <Grid item>
-          <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas auctor finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum bibendum, lectus at lacinia consectetur, nisl magna porta neque, nec tempor lectus est sed turpis. Curabitur nec pretium arcu. Sed a lorem est. Pellentesque faucibus, lectus eu ultricies elementum, erat metus gravida erat, sed commodo enim metus vitae nibh. Pellentesque id lacinia elit. Fusce vitae tellus non ligula sodales convallis vel vitae urna.</Typography>
+        <Grid item sm={6} xs={12} className={classes.center}>
+          <Container>
+            <Typography variant="h4">Software Developer Intern</Typography>
+            <Typography variant="h6">RDS Proxy</Typography>
+            <br/>
+            <Link href="#" underline="hover" variant="body1">Learn more {'>'}</Link>
+          </Container>
         </Grid>
-        <Grid item>
-          <Avatar alt="SAP" src={`${process.env.PUBLIC_URL}/SAP.jpg`} sx={{ width: 80, height: 80 }}/>
+      </Grid>
+      <Grid container className={classes.card}>
+        <Grid item sm={6} xs={12} className={classes.center}>
+          <Container>
+            <Typography variant="h4">Software Developer Intern</Typography>
+            <Typography variant="h6">Infrastructure</Typography>
+            <br/>
+            <Link href="#" underline="hover" variant="body1">Learn more {'>'}</Link>
+          </Container>
         </Grid>
-        <Grid item>
-          <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas auctor finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum bibendum, lectus at lacinia consectetur, nisl magna porta neque, nec tempor lectus est sed turpis. Curabitur nec pretium arcu. Sed a lorem est. Pellentesque faucibus, lectus eu ultricies elementum, erat metus gravida erat, sed commodo enim metus vitae nibh. Pellentesque id lacinia elit. Fusce vitae tellus non ligula sodales convallis vel vitae urna.</Typography>
+        <Grid item sm={6} xs={12} className={classes.center}>
+          <Avatar alt="SAP" src={`${process.env.PUBLIC_URL}/SAP.jpg`} sx={{ width: "40vh", height: "40vh"}}/>
         </Grid>
-        <Grid item>
-          <Avatar alt="VCL" src={`${process.env.PUBLIC_URL}/VCL.jpg`} sx={{ width: 80, height: 80 }}/>
+      </Grid>
+      <Grid container className={classes.card}>
+        <Grid item sm={6} xs={12} className={classes.center}>
+          <Avatar alt="VCL" src={`${process.env.PUBLIC_URL}/VCL.jpg`} sx={{ width: "40vh", height: "40vh"}}/>
         </Grid>
-        <Grid item>
-          <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas auctor finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum bibendum, lectus at lacinia consectetur, nisl magna porta neque, nec tempor lectus est sed turpis. Curabitur nec pretium arcu. Sed a lorem est. Pellentesque faucibus, lectus eu ultricies elementum, erat metus gravida erat, sed commodo enim metus vitae nibh. Pellentesque id lacinia elit. Fusce vitae tellus non ligula sodales convallis vel vitae urna.</Typography>
+        <Grid item sm={6} xs={12} className={classes.center}>
+          <Container>
+          <Typography variant="h4">Lead Software Developer</Typography>
+            <Typography variant="h6">UBC Visual Cognition Lab</Typography>
+            <br/>
+            <Link href="#" underline="hover" variant="body1">Learn more {'>'}</Link>
+          </Container>
         </Grid>
       </Grid>
     </Container>
