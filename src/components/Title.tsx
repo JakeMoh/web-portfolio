@@ -5,8 +5,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const useStyles = makeStyles({
   title: {
-    paddingTop: "5vh",
-    paddingBottom: "5vh",
+    paddingTop: "8vh",
+    paddingBottom: "8vh",
     background: "#21242B"
   },
   titleText: {
