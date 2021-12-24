@@ -1,4 +1,4 @@
-import { Typography, Avatar, Container, Grid, Link} from '@mui/material';
+import { Typography, Avatar, Container, Grid, Link, Box} from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
@@ -34,22 +34,22 @@ function Experience() {
           <Avatar alt="awd" src={`${process.env.PUBLIC_URL}/aws.jpg`} sx={{width: "40vh", height: "auto", maxWidth: "100%"}}/>
         </Grid>
         <Grid item sm={6} xs={12} className={classes.center}>
-          <Container>
+          <Box>
             <Typography variant="h4">Software Developer Intern</Typography>
             <Typography variant="h6">RDS Proxy</Typography>
             <br/>
             <Link href="#" underline="hover" variant="body1">Learn more {'>'}</Link>
-          </Container>
+          </Box>
         </Grid>
       </Grid>
       <Grid container className={classes.card}>
         <Grid item sm={6} xs={12} className={classes.center}>
-          <Container>
+          <Box>
             <Typography variant="h4">Software Developer Intern</Typography>
             <Typography variant="h6">Infrastructure</Typography>
             <br/>
             <Link href="#" underline="hover" variant="body1">Learn more {'>'}</Link>
-          </Container>
+          </Box>
         </Grid>
         <Grid item sm={6} xs={12} className={classes.center}>
           <Avatar alt="SAP" src={`${process.env.PUBLIC_URL}/SAP.jpg`} sx={{width: "40vh", height: "auto", maxWidth: "100%"}}/>
@@ -60,12 +60,12 @@ function Experience() {
           <Avatar alt="VCL" src={`${process.env.PUBLIC_URL}/VCL.jpg`} sx={{width: "40vh", height: "auto", maxWidth: "100%"}}/>
         </Grid>
         <Grid item sm={6} xs={12} className={classes.center}>
-          <Container>
+          <Box>
           <Typography variant="h4">Lead Software Developer</Typography>
             <Typography variant="h6">UBC Visual Cognition Lab</Typography>
             <br/>
             <Link href="#" underline="hover" variant="body1">Learn more {'>'}</Link>
-          </Container>
+          </Box>
         </Grid>
       </Grid>
     </Container>

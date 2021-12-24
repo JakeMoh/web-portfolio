@@ -1,4 +1,4 @@
-import { Typography, Avatar, Container, Grid, Link } from '@mui/material';
+import { Typography, Avatar, Container, Grid, Link, Box } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
@@ -34,22 +34,22 @@ function Education() {
           <Avatar alt="UBC" src={`${process.env.PUBLIC_URL}/UBC.jpg`} sx={{width: "40vh", height: "auto", maxWidth: "100%"}}/>
         </Grid>
         <Grid item sm={6} xs={12} className={classes.center}>
-          <Container>
+          <Box>
             <Typography variant="h4">University of British Columbia</Typography>
             <Typography variant="h6">BSc Computer Science (2018 - 2022)</Typography>
             <br/>
             <Link href="#" underline="hover" variant="body1">Learn more {'>'}</Link>
-          </Container>
+          </Box>
         </Grid>
       </Grid>
       <Grid container className={classes.card}>
         <Grid item sm={6} xs={12} className={classes.center}>
-          <Container>
+          <Box>
             <Typography variant="h4">University of Toronto</Typography>
             <Typography variant="h6">BSc Animal Physiology & Human Biology (2012 - 2017)</Typography>
             <br/>
             <Link href="#" underline="hover" variant="body1">Learn more {'>'}</Link>
-          </Container>
+          </Box>
         </Grid>
         <Grid item sm={6} xs={12} className={classes.center}>
           <Avatar alt="UofT" src={`${process.env.PUBLIC_URL}/UofT.jpg`} sx={{width: "40vh", height: "auto", maxWidth: "100%"}}/>
