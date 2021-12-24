@@ -32,7 +32,7 @@ function Education() {
       <Typography variant="h3" className={classes.title}>Education</Typography>
       <Grid container className={classes.card}>
         <Grid item sm={6} xs={12} className={classes.center}>
-          <Avatar alt="UBC" src={`${process.env.PUBLIC_URL}/UBC.jpg`} sx={{ width: "40vh", height: "40vh"}}/>
+          <Avatar alt="UBC" src={`${process.env.PUBLIC_URL}/UBC.jpg`} sx={{width: "40vh", height: "auto", maxWidth: "100%"}}/>
         </Grid>
         <Grid item sm={6} xs={12} className={classes.center}>
           <Container>
@@ -53,7 +53,7 @@ function Education() {
           </Container>
         </Grid>
         <Grid item sm={6} xs={12} className={classes.center}>
-          <Avatar alt="UofT" src={`${process.env.PUBLIC_URL}/UofT.jpg`} sx={{ width: "40vh", height: "40vh"}}/>
+          <Avatar alt="UofT" src={`${process.env.PUBLIC_URL}/UofT.jpg`} sx={{width: "40vh", height: "auto", maxWidth: "100%"}}/>
         </Grid>
       </Grid>
     </Container>
