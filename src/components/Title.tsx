@@ -5,12 +5,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const useStyles = makeStyles({
   title: {
-    paddingTop: "vh",
+    paddingTop: "8vh",
     paddingBottom: "8vh",
     background: "#21242B"
-  },
-  titleText: {
-    paddingBottom: "10vh"
   },
   center: {
     display: 'flex',
@@ -23,12 +20,11 @@ const useStyles = makeStyles({
 
 function Title() {
   const classes = useStyles();
-  const width = window.innerWidth;
 
   return (
     <Grid container className={classes.title}>
-      <Grid sm={6} xs={12} className={classes.center}>
-        <Box className={classes.titleText}>
+      <Grid item sm={6} xs={12} className={classes.center}>
+        <Box>
           <Typography variant="h1">Jake Moh</Typography>
           <Typography variant="h4">Software Developer</Typography>
           <IconButton onClick={() => window.open("https://github.com/JakeMoh")}>

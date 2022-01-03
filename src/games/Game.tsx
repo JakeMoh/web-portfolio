@@ -1,4 +1,4 @@
-import {Avatar, Typography, Container, Grid} from '@mui/material';
+import {Typography, Container} from '@mui/material';
 
 function Game() {
   return (

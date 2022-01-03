@@ -4,6 +4,7 @@ import Title from './components/Title';
 import Project from './components/Project';
 import Education from './components/Education';
 import Game from './games/Game';
+import ConnectFive from './games/AlignFive/ConnectFive';
 import Footer from './components/Footer';
 
 import { HashRouter, Route, Switch } from 'react-router-dom';
@@ -39,6 +40,9 @@ function App() {
               </Route>
               <Route path="/game">
                 <Game/>
+              </Route>
+              <Route path="/connectfive">
+                <ConnectFive/>
               </Route>
             </Switch>
           </HashRouter>

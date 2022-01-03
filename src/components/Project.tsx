@@ -26,20 +26,20 @@ function Project() {
             <CardMedia
               component="img"
               height="300"
-              image="/game/game1.jpg"
+              image="/game/connectFive.jpg"
               alt="sample"
             />
             <CardContent>
               <Typography gutterBottom variant="h4">
-                Game 1
+                Connect Five
               </Typography>
               <Typography variant="body2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas auctor finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Two player game: Connect five dots to win the game.
               </Typography>
               <Link href="#" underline="hover" variant="body1">Learn more {'>'}</Link>
             </CardContent>
             <CardActions className={classes.button}>
-              <Button href="/#/game" variant="contained">
+              <Button href="/#/connectfive" variant="contained">
                 Play
               </Button>
             </CardActions>
@@ -53,7 +53,7 @@ function Project() {
                 Game 2
               </Typography>
               <Typography variant="body2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas auctor finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas auctor finibus.
               </Typography>
               <Link href="#" underline="hover" variant="body1">Learn more {'>'}</Link>
             </CardContent>
@@ -84,7 +84,7 @@ function Project() {
                 Game 3
               </Typography>
               <Typography variant="body2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas auctor finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas auctor finibus.
               </Typography>
               <Link href="#" underline="hover" variant="body1">Learn more {'>'}</Link>
             </CardContent>
@@ -109,7 +109,7 @@ function Project() {
                 Game 4
               </Typography>
               <Typography variant="body2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas auctor finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas auctor finibus.
               </Typography>
               <Link href="#" underline="hover" variant="body1">Learn more {'>'}</Link>
             </CardContent>

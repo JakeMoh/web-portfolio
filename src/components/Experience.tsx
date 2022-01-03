@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: "5vh"
+    padding: "2vh"
   },
   title: {
     paddingBottom: "5vh"
