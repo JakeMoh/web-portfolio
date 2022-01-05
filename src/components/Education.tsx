@@ -1,5 +1,6 @@
-import { Typography, Avatar, Container, Grid, Link, Box } from '@mui/material';
 import { makeStyles } from '@mui/styles';
+import { useState } from 'react';
+import { Typography, Avatar, Container, Grid, Link, Box, Button, Dialog, DialogTitle, DialogContent, DialogContentText, List, ListItem, ListItemText } from '@mui/material';
 
 const useStyles = makeStyles({
   education: {
@@ -25,6 +26,15 @@ const useStyles = makeStyles({
 
 function Education() {
   const classes = useStyles();
+  const [openUBC, setOpenUBC] = useState(false);
+
+  const handleClickOpenUBC = () => {
+    setOpenUBC(true);
+  };
+
+  const handleCloseUBC = () => {
+    setOpenUBC(false);
+  };
 
   return (
     <Container className={classes.education}>
@@ -38,7 +48,11 @@ function Education() {
             <Typography variant="h4">University of British Columbia</Typography>
             <Typography variant="h6">BSc Computer Science (2018 - 2022)</Typography>
             <br/>
-            <Link href="#" underline="hover" variant="body1">Learn more {'>'}</Link>
+            <Button onClick={handleClickOpenUBC}>Learn more {'>'}</Button>
+            <UBCDialog
+              open={openUBC}
+              onClose={handleCloseUBC}
+            />
           </Box>
         </Grid>
       </Grid>
@@ -47,8 +61,6 @@ function Education() {
           <Box>
             <Typography variant="h4">University of Toronto</Typography>
             <Typography variant="h6">BSc Animal Physiology & Human Biology (2012 - 2017)</Typography>
-            <br/>
-            <Link href="#" underline="hover" variant="body1">Learn more {'>'}</Link>
           </Box>
         </Grid>
         <Grid item sm={6} xs={12} className={classes.center}>
@@ -56,35 +68,32 @@ function Education() {
         </Grid>
       </Grid>
     </Container>
-    // <Container className={classes.education}>
-    //   <Typography variant="h3" className={classes.title}>Education</Typography>
-    //   <Grid container alignItems="center" justifyContent="center" direction="column" spacing={4}>
-    //     <Grid item>
-    //       <Avatar alt="AWS" src={`${process.env.PUBLIC_URL}/UBC.jpg`} sx={{ width: 80, height: 80 }}/>
-    //     </Grid>
-    //     <Grid item>
-    //       <Typography variant="h4">
-    //         University of British Columbia
-    //       </Typography>
-    //       <Typography>
-    //         BSc Computer Science
-    //         (2018 - 2022)
-    //       </Typography>
-    //     </Grid>
-    //     <Grid item>
-    //       <Avatar alt="SAP" src={`${process.env.PUBLIC_URL}/UofT.jpg`} sx={{ width: 80, height: 80 }}/>
-    //     </Grid>
-    //     <Grid item>
-    //     <Typography variant="h4">
-    //         University of Toronto
-    //       </Typography>
-    //       <Typography>
-    //         BSc Animal Physiology & Human Biology
-    //         (2012 - 2017)
-    //       </Typography>
-    //     </Grid>
-    //   </Grid>
-    // </Container>
+  );
+}
+
+function UBCDialog(props: any) {
+  const { onClose, open } = props;
+
+  const handleClose = () => {
+    onClose();
+  };
+
+  return (
+    <Dialog onClose={handleClose} open={open}>
+      <DialogTitle>UBC</DialogTitle>
+      <DialogContent>
+        <DialogContentText>
+          <List>
+            <ListItem>
+              <ListItemText>Computer science courses average: 3.84 / 4</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemText>Courses: Software Construction, Algorithms and Data Structures, Introduction to Computer Systems, Computer Hardware and Operating Systems, Introduction to Relational Databases, Internet Computing, Machine Learning and Data Mining, Advanced Software Engineering, Numerical Approximation and Discretization</ListItemText>
+            </ListItem>
+          </List>
+        </DialogContentText>
+      </DialogContent>
+    </Dialog>
   );
 }
 

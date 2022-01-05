@@ -17,9 +17,28 @@ const darkTheme = createTheme({
       main: "#06c"
     },
     background: {
-      default: "21242B",
-      paper: "21242B"
-    }
+      default: "#21242B",
+      paper: "#21242B"
+    },
+  },
+  components: {
+    // Name of the component
+    MuiCard: {
+      styleOverrides: {
+        // Name of the slot
+        root: {
+          // Some CSS
+          backgroundImage: 'none',
+        },
+      },
+    },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          backgroundImage: 'none',
+        },
+      },
+    },
   },
 });
 
